@@ -112,7 +112,7 @@ video::-webkit-media-controls {
 	position:absolute;
 	z-index:9;
 	width:100%;
-	margin-top:250px;
+	margin-top:220px;
 }
 #typed{
 	font-size:40px;
@@ -121,5 +121,5 @@ video::-webkit-media-controls {
 	font-size:40px;
 }
 #bg-red{
-	color:red;
+	color:#FB8122;
 }
