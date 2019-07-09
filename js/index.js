@@ -6,7 +6,7 @@ $(document).ready(function(){
 	  	if($(this).attr('data-toggle') == 0){
 	  		$(this).find('i').removeClass('fa-navicon');
 	  		$(this).find('i').addClass('fa-arrow-left');
-	  		$(this).find('i').css('color', '#E1E2E2');
+	  		// $(this).find('i').css('color', '#E1E2E2');
 			$('.menu').animate({
 		    	width:'20%'
 		    }), $(this).animate({
@@ -18,7 +18,7 @@ $(document).ready(function(){
 		else{
 			$(this).find('i').addClass('fa-navicon');
 	  		$(this).find('i').removeClass('fa-arrow-left');
-	  		$(this).find('i').css('color', '#1D2228');
+	  		// $(this).find('i').css('color', '#1D2228');
 	  		$('.menu-items').fadeToggle(), $('.menu').animate({
 		    	width:'0%'
 		    }), $(this).animate({

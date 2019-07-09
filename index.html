@@ -12,7 +12,8 @@
 	<!-- CSS Library -->
 	<link rel="stylesheet" type="text/css" href="lib/aos.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand|Teko&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="lib/hover-min.css">
 	<!-- Style -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -22,6 +23,7 @@
 	    <a href="#firstPage"><li data-menuanchor="firstPage" class="active"><i class="fa fa-circle"></i></li></a>
 	    <a href="#secondPage"><li data-menuanchor="secondPage"><i class="fa fa-circle"></i></li></a>
 	    <a href="#thirdPage"><li data-menuanchor="thirdPage"><i class="fa fa-circle"></i></li></a>
+	    <a href="#fourthPage"><li data-menuanchor="fourthPage"><i class="fa fa-circle"></i></li></a>
 	</ul>
 
 	<button class="menu-burger" data-toggle='0'>
@@ -60,16 +62,95 @@
 		</div>
 
 		<div class="section" id="section1">
-			<p style="text-align:center;padding-top:250px;" data-aos="fade-right">Second section</p>
+			<div class="header">
+				<div class="row">
+					<div class="col-lg-4"></div>
+					<div class="col-lg-4 text-center">
+						<img data-aos="zoom-in" src="img/logo.png" width="150" height="150">
+					</div>
+					<div class="col-lg-4 text-right">
+						<p data-aos="fade-right">#My Interests</p>
+					</div>
+				</div>
+			</div>
+			<div class="row text-center" style="width:95%;margin:0 auto;margin-bottom:20px;">
+				<div class="col-lg-2" data-aos="zoom-in" data-aos-delay="500">
+					<img src="img/example.jpg" width="100%" align="center">
+					<p style="font-size:24px;">
+						<b>2004 y.</b>
+					</p>
+					<p>I went to school... </p>
+				</div>
+				<div class="col-lg-2" data-aos="zoom-in" data-aos-delay="800">
+					<img src="img/example.jpg" width="100%" align="center">
+					<p style="font-size:24px;">
+						<b>2006 y.</b>
+					</p>
+					<p>I was FC Kairat's player</p>
+				</div>
+				<div class="col-lg-2" data-aos="zoom-in" data-aos-delay="1100">
+					<img src="img/example.jpg" width="100%" align="center">
+					<p style="font-size:24px;">
+						<b>2009 y.</b>
+					</p>
+					<p>My dad have bought me my first guitar</p>
+				</div>
+				<div class="col-lg-2" data-aos="zoom-in" data-aos-delay="1400">
+					<img src="img/example.jpg" width="100%" align="center">
+					<p style="font-size:24px;">
+						<b>2010 y.</b>
+					</p>
+					<p>I firstly met my love!</p>
+				</div>
+				<div class="col-lg-2" data-aos="zoom-in" data-aos-delay="1700">
+					<img src="img/example.jpg" width="100%" align="center">
+					<p style="font-size:24px;">
+						<b>2012 y.</b>
+					</p>
+					<p>I started to singing</p>
+				</div>
+				<div class="col-lg-2" data-aos="zoom-in" data-aos-delay="2000">
+					<img src="img/example.jpg" width="100%" align="center">
+					<p style="font-size:24px;">
+						<b>2014 y.</b>
+					</p>
+					<p>I started to programming</p>
+				</div>
+			</div>
 		</div>
 
 		<div class="section" id="section2">
+			<div class="header">
+				<div class="row">
+					<div class="col-lg-4"></div>
+					<div class="col-lg-4 text-center">
+						<img data-aos="zoom-in" src="img/logo.png" width="150" height="150">
+					</div>
+					<div class="col-lg-4 text-right">
+						<p data-aos="fade-right">#My Goals</p>
+					</div>
+				</div>
+			</div>
 			<!-- <video class="video-background" loop muted data-autoplay>
 				<source src="vid\background.mp4" type="video/mp4">
 			</video>
 			<div class="layer">
 				
 			</div> -->
+		</div>
+
+		<div class="section" id="section3">
+			<div class="header">
+				<div class="row">
+					<div class="col-lg-4"></div>
+					<div class="col-lg-4 text-center">
+						<img data-aos="zoom-in" src="img/logo.png" width="150" height="150">
+					</div>
+					<div class="col-lg-4 text-right">
+						<p data-aos="fade-right">#My Progress</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </body>
@@ -93,7 +174,7 @@
 		$('#fullpage').fullpage({
 			controlArrows: false,
 			// sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE'],
-		    anchors: ['firstPage', 'secondPage', 'thirdPage'],
+		    anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
 		    lazyLoad: true,
 		    menu: '#sections-menu',
 			onLeave: function(){
