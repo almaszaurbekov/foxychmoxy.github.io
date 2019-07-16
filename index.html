@@ -14,129 +14,37 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand|Teko&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="lib/hover-min.css">
+	<link rel="stylesheet" type="text/css" href="css/btn-hover.css">
 	<!-- Style -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">
-
-	<ul id="sections-menu">
-	    <a href="#firstPage"><li data-menuanchor="firstPage" class="active"><i class="fa fa-circle"></i></li></a>
-	    <a href="#secondPage"><li data-menuanchor="secondPage"><i class="fa fa-circle"></i></li></a>
-	    <a href="#thirdPage"><li data-menuanchor="thirdPage"><i class="fa fa-circle"></i></li></a>
-	    <a href="#fourthPage"><li data-menuanchor="fourthPage"><i class="fa fa-circle"></i></li></a>
-	</ul>
-
+	<ul id="sections-menu"></ul>
 	<button class="menu-burger" data-toggle='0'>
 		<i class="fa fa-navicon"></i>
 	</button>
-
-	<div class="menu">
-		<div class="menu-items">
-			<div class="row">
-				<div class="col-lg-4" style="padding-left:30px;color:#FB8122">WebDevProg</div>
-				<div class="col-lg-4"></div>
-				<div class="col-lg-4"></div>
-			</div>
-			<hr>
-			<ul id="menu">
-				<a href="#"><li><i class="fa fa-home" style="margin-right:10px;"></i> Home</li></a>
-				<a href="#"><li><i class="fa fa-desktop" style="margin-right:10px;"></i> MyProjects</li></a>
-				<a href="#"><li><i class="fa fa-gamepad" style="margin-right:10px;"></i> MyInterests</li></a>
-				<a href="#"><li><i class="fa fa-book" style="margin-right:10px;"></i> MyBooks</li></a>
-				<a href="#"><li><i class="fa fa-check-square-o" style="margin-right:10px;"></i> MyGoals</li></a>
-				<a href="#"><li><i class="fa fa-line-chart" style="margin-right:7px;"></i> MyProgress</li></a>
-				<a href="#"><li><i class="fa fa-child" style="margin-right:14px;"></i> AboutMe</li></a>
-				<a href="#"><li><i class="fa fa-phone" style="margin-right:14px;"></i> Contacts</li></a>
-				<a href="#"><li><i class="fa fa-cogs" style="margin-right:10px;"></i> AboutSite</li></a>
-			</ul> 
-		</div>
-	</div>
-
+	<div class="menu"></div>
 	<div id="fullpage">
-		<div class="section" id="section-0">
-			<div class="section-cd" id="section-cd-0">
-				<p class="title">
-					<span style="font-size:38px;">My name is <b>Almas</b></span>
-					<br>
-					<span id="typed"></span>
-				</p>
-				<div data-aos="fade-right" style="top:45%;width:50px;height:50px;background:red;clip-path: polygon(0 100%, 0 0, 100% 0);background:#FCAA7F;position:absolute;right:48%;"></div>
-			</div>
-			<div class="section-cd" id="section-cd-1"></div>
-		</div>
-
-		<div class="section" id="section-1">
-			<div class="section-cd" id="section-cd-0">
-				<p data-aos="zoomIn" style="text-align:right;">Hello world!</p>
-				<button class="pull-right hvr-bounce-to-bottom">View</button>
-				<div data-aos="fade-right" style="top:45%;width:50px;height:50px;background:red;clip-path: polygon(0 100%, 0 0, 100% 0);background:#A3EB9A;position:absolute;right:48%;"></div>
-			</div>
-			<div class="section-cd" id="section-cd-1"></div>
-		</div>
-
-		<div class="section" id="section-2">
-			<div class="section-cd" id="section-cd-0"></div>
-			<div class="section-cd" id="section-cd-1"></div>
-			<!-- <video class="video-background" loop muted data-autoplay>
-				<source src="vid\background.mp4" type="video/mp4">
-			</video>
-			<div class="layer">
-				
-			</div> -->
-		</div>
-
-		<div class="section" id="section-3">
-			<div class="section-cd" id="section-cd-0"></div>
-			<div class="section-cd" id="section-cd-1"></div>
-		</div>
+		<div class="section" id="section-0"></div>
+		<div class="section" id="section-1"></div>
+		<div class="section" id="section-2"></div>
+		<div class="section" id="section-3"></div>
+		<div class="section" id="section-4"></div>
+		<div class="section" id="section-5"></div>
+		<div class="section" id="section-6"></div>
+		<div class="section" id="section-7"></div>
+		<div class="section" id="section-8"></div>
 	</div>
 </body>
+	<!-- JavaScript -->
+	<script src="js/homeController.js"></script>
+	<script src="js/index.js"></script>
 	<!-- JS Library -->
+	<script src="lib/particles.min.js"></script>
+	<script src="lib/app.js"></script>
 	<script src="lib/aos.js"></script>
 	<script src="lib/typed.min.js"></script>
 	<script src="lib/fullpage.min.js"></script>
-	<script>
-		var typed = new Typed('#typed', {
-  			strings: [	"I'm <span id='bg-red'>Web Developer</span>", 
-  						"I'm <span id='bg-red'>Musician</span>",
-  						"I'm <span id='bg-red'>Footballer</span>",
-  						"I'm <span id='bg-red'>Entrepreneur</span>",
-  						"I'm <span id='bg-red'>Writer</span>",
-  						"I'm <span id='bg-red'>Bloger</span>"],
-  			typeSpeed: 50,
-  			backSpeed: 25,
-  			loop: true
-		});
-		$('[data-aos]').each(function(){ $(this).addClass("aos-init"); });
-		$('#fullpage').fullpage({
-			controlArrows: false,
-			parallax: true,
-			// sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE'],
-		    anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
-		    lazyLoad: true,
-		    menu: '#sections-menu',
-			onLeave: function(){
-			    $('.section [data-aos]').each(function(){
-			        $(this).removeClass("aos-animate")
-			    });
-			},
-			onSlideLeave: function(){
-			    $('.slide [data-aos]').each(function(){
-			        $(this).removeClass("aos-animate")
-			    });
-			},
-			afterSlideLoad: function(){
-			    $('.slide.active [data-aos]').each(function(){
-			        $(this).addClass("aos-animate")
-			    });
-			},
-			afterLoad: function(){
-			    $('.section.active [data-aos]').each(function(){
-			        $(this).addClass("aos-animate")
-			    });
-			}});
-	</script>
-	<!-- <script>AOS.init();</script> -->
-	<!-- JavaScript -->
-	<script src="js/index.js"></script>
+	<script src="js/typedInit.js"></script>
+	<script src="js/fullPageInit.js"></script>
 </html>

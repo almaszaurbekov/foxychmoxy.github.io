@@ -12,13 +12,14 @@ html, body{
 	z-index:9999;
 	list-style: none;
 	right:10px;
-	top:40%;
+	top:35%;
 }
 #sections-menu li{
 	color:#E1E2E2;
 }
 #sections-menu li.active{
-	color:#FB8122;
+	/*color:#FB8122;*/
+	color:black;
 }
 #menu{
 	list-style:none;
@@ -39,36 +40,6 @@ html, body{
 #menu a{
 	color:white;
 	text-decoration:none;
-}
-.layer{
-	background:rgba(29,34,40,.9);
-	position: absolute;
-	z-index: 4;
-	width: 100%;
-	height:100vh;
-	color:white;
-	-webkit-transform: translate3d(0,0,0);
-	-ms-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
-}
-.video-background{
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	top:0;
-	right:0;
-	width: 100%;
-	height: 100%;
-	background-size: 100% 100%;
-	background-color: black; /* in case the video doesn't fit the whole page*/
-	background-image: /* our video */;
-	background-position: center center;
-	background-size: contain;
-	object-fit: cover; /*cover video background */
-	z-index:3;
-}
-video::-webkit-media-controls {
-  display:none !important;
 }
 .menu{
 	padding-top:30px;
@@ -94,7 +65,6 @@ video::-webkit-media-controls {
 	font-size:28px;
 	/*color:#E1E2E2;*/
 }
-
 .section{
 	width:100%;
 	height:100vh;
@@ -104,64 +74,56 @@ video::-webkit-media-controls {
 	width:50%;
 	height:100vh;
 	float:left;
-}
-/* BACKGROUNDS */
-#section-0{
-	/*background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);*/
-}
-#section-0 #section-cd-0{
-	background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);	
-	/*background-image: url(../img/A1.png);*/
 	background-size: cover;
 	background-position: 50% 50%;
 }
-#section-0 #section-cd-1{
-	background-image: url(../img/example1.jpg);
-	background-size: cover;
-	background-position: 50% 50%;
-}
-#section-1 #section-cd-0{
+#particles-js{
 	background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
-	/*background-image: url(../img/A2.png);*/
-	background-size: cover;
-	background-position: 50% 50%;
-}
-#section-1 #section-cd-1{
-	background-image: url(../img/example.jpg);
-	background-size: cover;
-	background-position: 50% 50%;
-}
-#section-2 #section-cd-0{
-	background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
-	/*background-image: url(../img/A3.png);*/
-	background-size: cover;
-	background-position: 50% 50%;
-}
-#section-2 #section-cd-1{
-	background-image: url(../img/example1.jpg);
-	background-size: cover;
-	background-position: 50% 50%;
-}
-#section-3 #section-cd-0{
-	background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
-	/*background-image: url(../img/A4.png);*/
-	background-size: cover;
-	background-position: 50% 50%;
-}
-#section-3 #section-cd-1{
-	background-image: url(../img/example.jpg);
 	background-size: cover;
 	background-position: 50% 50%;
 }
 .title{
+	width: 500px;
+	height:200px;
+	position:absolute;
+	top:30%;
 	text-align:center;
-	z-index:9;
-	width:100%;
-	margin-top:220px;
+	color:white;
+	padding-top:50px;
+	z-index:9999;
+	left:31%;
 }
-#typed{
+#typed, .typed-cursor{
 	font-size:40px;
 }
-.typed-cursor{
-	font-size:40px;
+#bg-red{
+	color:black;
+	font-weight:bold;
+}
+#clippy{
+	top:45%;
+	width:25px;
+	height:25px;
+	background:red;
+	clip-path: polygon(0 100%, 0 0, 100% 0);
+	position:absolute;
+	right:49%;
+}
+.info-block{
+	width:70%;
+	height:auto;
+	margin:0 auto;
+	margin-top:150px;
+	padding:10px;
+}
+.info-block p{
+	font-size:15px;
+	font-weight:bold;
+}
+.info-block h1{
+	font-size:45px;
+}
+.info-block hr{
+	width:15%;
+	border:1.2px solid black;
 }
