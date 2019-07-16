@@ -53,84 +53,30 @@
 	</div>
 
 	<div id="fullpage">
-		<div class="section" id="section0">
-			<p class="title">
-				<span style="font-size:38px;">My name is <b>Almas</b></span>
-				<br>
-				<span id="typed"></span>
-			</p>
+		<div class="section" id="section-0">
+			<div class="section-cd" id="section-cd-0">
+				<p class="title">
+					<span style="font-size:38px;">My name is <b>Almas</b></span>
+					<br>
+					<span id="typed"></span>
+				</p>
+				<div data-aos="fade-right" style="top:45%;width:50px;height:50px;background:red;clip-path: polygon(0 100%, 0 0, 100% 0);background:#FCAA7F;position:absolute;right:48%;"></div>
+			</div>
+			<div class="section-cd" id="section-cd-1"></div>
 		</div>
 
-		<div class="section" id="section1">
-			<div class="header">
-				<div class="row">
-					<div class="col-lg-4"></div>
-					<div class="col-lg-4 text-center">
-						<img data-aos="zoom-in" src="img/logo.png" width="150" height="150">
-					</div>
-					<div class="col-lg-4 text-right">
-						<p data-aos="fade-right">#My Interests</p>
-					</div>
-				</div>
+		<div class="section" id="section-1">
+			<div class="section-cd" id="section-cd-0">
+				<p data-aos="zoomIn" style="text-align:right;">Hello world!</p>
+				<button class="pull-right hvr-bounce-to-bottom">View</button>
+				<div data-aos="fade-right" style="top:45%;width:50px;height:50px;background:red;clip-path: polygon(0 100%, 0 0, 100% 0);background:#A3EB9A;position:absolute;right:48%;"></div>
 			</div>
-			<div class="row text-center" style="width:95%;margin:0 auto;margin-bottom:20px;">
-				<div class="col-lg-2" data-aos="zoom-in" data-aos-delay="500">
-					<img src="img/example.jpg" width="100%" align="center">
-					<p style="font-size:24px;">
-						<b>2004 y.</b>
-					</p>
-					<p>I went to school... </p>
-				</div>
-				<div class="col-lg-2" data-aos="zoom-in" data-aos-delay="800">
-					<img src="img/example.jpg" width="100%" align="center">
-					<p style="font-size:24px;">
-						<b>2006 y.</b>
-					</p>
-					<p>I was FC Kairat's player</p>
-				</div>
-				<div class="col-lg-2" data-aos="zoom-in" data-aos-delay="1100">
-					<img src="img/example.jpg" width="100%" align="center">
-					<p style="font-size:24px;">
-						<b>2009 y.</b>
-					</p>
-					<p>My dad have bought me my first guitar</p>
-				</div>
-				<div class="col-lg-2" data-aos="zoom-in" data-aos-delay="1400">
-					<img src="img/example.jpg" width="100%" align="center">
-					<p style="font-size:24px;">
-						<b>2010 y.</b>
-					</p>
-					<p>I firstly met my love!</p>
-				</div>
-				<div class="col-lg-2" data-aos="zoom-in" data-aos-delay="1700">
-					<img src="img/example.jpg" width="100%" align="center">
-					<p style="font-size:24px;">
-						<b>2012 y.</b>
-					</p>
-					<p>I started to singing</p>
-				</div>
-				<div class="col-lg-2" data-aos="zoom-in" data-aos-delay="2000">
-					<img src="img/example.jpg" width="100%" align="center">
-					<p style="font-size:24px;">
-						<b>2014 y.</b>
-					</p>
-					<p>I started to programming</p>
-				</div>
-			</div>
+			<div class="section-cd" id="section-cd-1"></div>
 		</div>
 
-		<div class="section" id="section2">
-			<div class="header">
-				<div class="row">
-					<div class="col-lg-4"></div>
-					<div class="col-lg-4 text-center">
-						<img data-aos="zoom-in" src="img/logo.png" width="150" height="150">
-					</div>
-					<div class="col-lg-4 text-right">
-						<p data-aos="fade-right">#My Goals</p>
-					</div>
-				</div>
-			</div>
+		<div class="section" id="section-2">
+			<div class="section-cd" id="section-cd-0"></div>
+			<div class="section-cd" id="section-cd-1"></div>
 			<!-- <video class="video-background" loop muted data-autoplay>
 				<source src="vid\background.mp4" type="video/mp4">
 			</video>
@@ -139,18 +85,9 @@
 			</div> -->
 		</div>
 
-		<div class="section" id="section3">
-			<div class="header">
-				<div class="row">
-					<div class="col-lg-4"></div>
-					<div class="col-lg-4 text-center">
-						<img data-aos="zoom-in" src="img/logo.png" width="150" height="150">
-					</div>
-					<div class="col-lg-4 text-right">
-						<p data-aos="fade-right">#My Progress</p>
-					</div>
-				</div>
-			</div>
+		<div class="section" id="section-3">
+			<div class="section-cd" id="section-cd-0"></div>
+			<div class="section-cd" id="section-cd-1"></div>
 		</div>
 	</div>
 </body>
@@ -173,6 +110,7 @@
 		$('[data-aos]').each(function(){ $(this).addClass("aos-init"); });
 		$('#fullpage').fullpage({
 			controlArrows: false,
+			parallax: true,
 			// sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE'],
 		    anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
 		    lazyLoad: true,
