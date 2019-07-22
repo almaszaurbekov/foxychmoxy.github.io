@@ -11,7 +11,7 @@
           appearance: none;
   border: 0;
   background: transparent;
-  color: black;
+  color: white;
   text-transform: uppercase;
   letter-spacing: 0.25em;
   outline: none;
@@ -23,7 +23,7 @@
 }
 .button:hover {
   background: rgba(100, 0, 0, 0.03);
-  color:black;
+  color:white;
   text-decoration:none;
 }
 .button__horizontal, .button__vertical {

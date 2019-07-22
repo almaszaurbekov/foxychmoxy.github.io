@@ -5,55 +5,41 @@ html, body{
 	padding:0;
 	font-size:18px;
 	color:#1D2228;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Muli', sans-serif;
 }
 #sections-menu{
 	position: absolute;
-	z-index:9999;
+	z-index:999;
 	list-style: none;
 	right:10px;
 	top:35%;
 }
 #sections-menu li{
-	color:#E1E2E2;
+	color:white;
 }
 #sections-menu li.active{
-	/*color:#FB8122;*/
-	color:black;
-}
-#menu{
-	list-style:none;
-	z-index:3;
- 	width:100%;
- 	margin:0;
- 	padding:0;
-}
-#menu li{
-	width:100%;
-	padding:15px;
-	transition:all ease 0.3s;
-	border-bottom: 1px solid #FB8122;
-}
-#menu li:hover{
-	background:#FB8122;
-}
-#menu a{
-	color:white;
-	text-decoration:none;
+	color:#FB8122;
 }
 .menu{
-	padding-top:30px;
+	display:none;
+	width:100%;
+	height:100vh;
+	background:#1D2228;
 	position:absolute;
 	z-index:9998;
-	width:0%;
-	height:100vh;
-	left:0;
-	/*background:#1D2228;*/
-	background:rgba(0,0,0,.95);
-	color:white;
+	font-size:22px;
 }
 .menu-items{
-	display:none;
+	height:100vh;
+	padding-top:40px;
+}
+.menu-items i{
+	margin-right:10px;
+}
+.yy{
+	height:100vh;
+	transition:all ease 0.3s;
+	background-color:#E1E2E2;
 }
 .menu-burger{
 	position:fixed;
@@ -63,12 +49,13 @@ html, body{
 	border:none;
 	outline:none;
 	font-size:28px;
-	/*color:#E1E2E2;*/
+	color:white;
 }
 .section{
 	width:100%;
 	height:100vh;
 	position:relative;
+	color:white;
 }
 .section-cd{
 	width:50%;
@@ -78,26 +65,42 @@ html, body{
 	background-position: 50% 50%;
 }
 #particles-js{
-	background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
-	background-size: cover;
-	background-position: 50% 50%;
+	background:#1D2228;
+	color:white;
 }
 .title{
-	width: 500px;
-	height:200px;
+	top:20%;
+	left:15%;
+	max-width:700px;
 	position:absolute;
-	top:30%;
-	text-align:center;
 	color:white;
-	padding-top:50px;
 	z-index:9999;
-	left:31%;
 }
-#typed, .typed-cursor{
+.title .main{
+	font-size:80px;
+	font-weight:bold;
+	color:#FB8122;
+	letter-spacing:-2px;
+}
+.links a{
+	color:white;
+}
+.links{
+	padding-left:10px;
+	margin-bottom:1em;
+}
+.links i{
+	font-size:40px;
+	margin-right:15px
+}
+#typed{
+	font-size:40px;
+}
+.typed-cursor{
 	font-size:40px;
 }
 #bg-red{
-	color:black;
+	color:#FB8122;
 	font-weight:bold;
 }
 #clippy{
@@ -110,6 +113,7 @@ html, body{
 	right:49%;
 }
 .info-block{
+	color:white;
 	width:70%;
 	height:auto;
 	margin:0 auto;
@@ -125,5 +129,8 @@ html, body{
 }
 .info-block hr{
 	width:15%;
-	border:1.2px solid black;
+	border:1.2px solid white;
+}
+.info-block p a{
+	color:white;
 }
