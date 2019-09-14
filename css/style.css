@@ -1,136 +1,141 @@
-html, body{
-	width: 100%;
-	height: 100%;
-	margin:0;
-	padding:0;
-	font-size:18px;
-	color:#1D2228;
-	font-family: 'Muli', sans-serif;
+* {
+  font-family: 'Roboto', sans-serif;
 }
-#sections-menu{
-	position: absolute;
-	z-index:999;
-	list-style: none;
-	right:10px;
-	top:35%;
+
+section {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
 }
-#sections-menu li{
-	color:white;
+
+.dark-shell {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  background: rgba(0, 0, 0, 0.7);
 }
-#sections-menu li.active{
-	color:#FB8122;
+
+.row {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
-.menu{
-	display:none;
-	width:100%;
-	height:100vh;
-	background:#1D2228;
-	position:absolute;
-	z-index:9998;
-	font-size:22px;
+
+#clippy {
+  top: 50%;
+  width: 25px;
+  height: 25px;
+  background: blueviolet;
+  -webkit-clip-path: polygon(0 100%, 0 0, 100% 0);
+          clip-path: polygon(0 100%, 0 0, 100% 0);
+  position: absolute;
+  right: -3.5%;
 }
-.menu-items{
-	height:100vh;
-	padding-top:40px;
+
+.info-block {
+  color: white;
+  width: 75%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 190px;
+  padding: 10px;
 }
-.menu-items i{
-	margin-right:10px;
+
+.info-block p {
+  font-size: 15px;
 }
-.yy{
-	height:100vh;
-	transition:all ease 0.3s;
-	background-color:#E1E2E2;
+
+.info-block h1 {
+  font-size: 45px;
 }
-.menu-burger{
-	position:fixed;
-	z-index: 9999;
-	margin:10px;
-	background:none;
-	border:none;
-	outline:none;
-	font-size:28px;
-	color:white;
+
+.info-block hr {
+  width: 15%;
+  border: 1.2px solid white;
 }
-.section{
-	width:100%;
-	height:100vh;
-	position:relative;
-	color:white;
+
+.info-block p a {
+  color: white;
 }
-.section-cd{
-	width:50%;
-	height:100vh;
-	float:left;
-	background-size: cover;
-	background-position: 50% 50%;
+
+#ex0 {
+  background-image: url(../img/library-background.jpg);
+  background-size: cover;
+  color: white;
 }
-#particles-js{
-	background:#1D2228;
-	color:white;
+
+.dark-shell-ex0 {
+  padding-top: 180px;
 }
-.title{
-	top:20%;
-	left:15%;
-	max-width:700px;
-	position:absolute;
-	color:white;
-	z-index:9999;
+
+#ex0 .title {
+  font-size: 100px;
+  letter-spacing: 0.06em;
+  font-weight: bold;
 }
-.title .main{
-	font-size:80px;
-	font-weight:bold;
-	color:#FB8122;
-	letter-spacing:-2px;
+
+#weblinks {
+  margin-bottom: 50px;
+  font-size: 3.7em;
+  letter-spacing: 0.06em;
 }
-.links a{
-	color:white;
+
+#weblinks a, .sub {
+  margin: 40px;
 }
-.links{
-	padding-left:10px;
-	margin-bottom:1em;
+
+.my-container {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
-.links i{
-	font-size:40px;
-	margin-right:15px
+
+.grid-item {
+  color: white;
+  display: inline-block;
+  width: 380px;
+  height: 380px;
+  padding-bottom: 20px;
+  background-color: #A32734;
+  margin: 20px;
+  cursor: default;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
 }
-#typed{
-	font-size:40px;
+
+.grid-item:hover {
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9);
+  background: #B02222;
 }
-.typed-cursor{
-	font-size:40px;
+
+.grid-item .head {
+  width: 100%;
+  height: 50%;
+  background-image: url(../img/mybooks.jpg);
+  background-size: cover;
 }
-#bg-red{
-	color:#FB8122;
-	font-weight:bold;
+
+.grid-item .body {
+  text-align: left;
+  padding: 25px;
 }
-#clippy{
-	top:45%;
-	width:25px;
-	height:25px;
-	background:red;
-	clip-path: polygon(0 100%, 0 0, 100% 0);
-	position:absolute;
-	right:49%;
+
+.isDisabled {
+  cursor: not-allowed;
+  opacity: .5;
 }
-.info-block{
-	color:white;
-	width:70%;
-	height:auto;
-	margin:0 auto;
-	margin-top:150px;
-	padding:10px;
+
+#ex0 #my-btn {
+  padding-left: 90px;
+  padding-right: 90px;
+  pointer-events: none;
 }
-.info-block p{
-	font-size:15px;
-	font-weight:bold;
+
+.navbar-brand {
+  font-size: 25px;
+  margin-top: -3px;
 }
-.info-block h1{
-	font-size:45px;
-}
-.info-block hr{
-	width:15%;
-	border:1.2px solid white;
-}
-.info-block p a{
-	color:white;
-}
+/*# sourceMappingURL=style.css.map */
