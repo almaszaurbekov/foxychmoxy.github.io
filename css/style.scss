@@ -1,14 +1,17 @@
-$base-top-distance:50px;
-$base-bottom-distance:50px;
+// GENERAL
 
-*{
-    font-family: 'Roboto', sans-serif;
-}
+*{ font-family: 'Roboto', sans-serif; }
 
 section{
     width:100%;
     min-height:100vh;
     height:auto;
+}
+
+@mixin current-settings {
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .dark-shell{
@@ -17,6 +20,30 @@ section{
     padding:50px;
     background: rgba(0,0,0,.7);
 }
+#current .title{
+    font-size: 100px;
+    letter-spacing:0.06em;
+    font-weight: bold;
+}
+#current #my-btn{
+    padding-left: 90px;
+    padding-right: 90px;
+}
+#current .sub{
+    width:500px;
+    margin:0 auto;
+    font-size:18px;
+    margin-top:20px;
+    margin-bottom:40px;
+}
+.dark-shell-current{
+    padding-top:180px;
+}
+
+.navbar-brand{
+    font-size: 25px;
+    margin-top:-3px;
+}
 
 .row{
     width:100%;
@@ -24,67 +51,57 @@ section{
     padding:0;
 }
 
+// -------------------------------------------------
+// Backgrounds
+
+#ex0{ @include current-settings; background-image: url(../img/library-background.jpg); }
+#ex1{ @include current-settings; background-image: url(../img/mygoals.jpg); }
+
+// -------------------------------------------------
+// Index
+
+$index-font-color: white;
+$clippy-size: 25px;
+$media-size: 3.7em;
+$link-margin: 50px;
+
 #clippy{
 	top:50%;
-	width:25px;
-	height:25px;
-	background:blueviolet;
+	width:$clippy-size;
+	height:$clippy-size;
 	clip-path: polygon(0 100%, 0 0, 100% 0);
 	position:absolute;
 	right:-3.5%;
 }
-
 .info-block{
-	color:white;
+	color:$index-font-color;
 	width:75%;
 	height:auto;
 	margin:0 auto;
     margin-top:190px;
 	padding:10px;
 }
-.info-block p{
-	font-size:15px;
-}
-.info-block h1{
-	font-size:45px;
-}
+.info-block p{ 	font-size:15px; }
+.info-block h1{ font-size:45px; }
 .info-block hr{
 	width:15%;
-	border:1.2px solid white;
+	border:1.2px solid $index-font-color;
 }
-.info-block p a{
-	color:white;
-}
-
-// background-size: cover;
-// background-position: 50% 50%;
-
-// section 0
-
-#ex0{
-    background-image: url(../img/library-background.jpg);
-    background-size: cover;
-    color:white;
-}
-
-.dark-shell-ex0{
-    padding-top:180px;
-}
-#ex0 .title{
-    font-size: 100px;
-    letter-spacing:0.06em;
-    font-weight: bold;
-}
-
+.info-block p a{ color:$index-font-color; }
 #weblinks{
     margin-bottom:50px;
-    font-size: 3.7em;
+    font-size: $media-size;
     letter-spacing:0.06em;
 }
+#weblinks a{ margin: $link-margin; }
+// -------------------------------------------------
+// MyProjects
 
-#weblinks a, .sub{
-    margin:40px;
-}
+$grid-size: 380px;
+$grid-background: #A32734;
+$grid-background-hover: #B02222;
+$grid-margin: 20px;
+$grid-head-background: url(../img/mybooks.jpg); 
 
 .my-container{
     text-align:center;
@@ -95,11 +112,11 @@ section{
 .grid-item{
     color:white;
     display: inline-block;
-    width: 380px;
-    height:380px;
+    width: $grid-size;
+    height:$grid-size;
     padding-bottom:20px;
-    background-color: #A32734;
-    margin:20px;
+    background-color: $grid-background;
+    margin: $grid-margin;
     cursor: default;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     transition: all ease 0.3s;
@@ -107,13 +124,13 @@ section{
 
 .grid-item:hover{
     box-shadow: 0 10px 20px rgba(0,0,0,0.9);
-    background: #B02222;
+    background: $grid-background-hover;
 }
 
 .grid-item .head {
     width:100%; 
     height:50%; 
-    background-image: url(../img/mybooks.jpg); 
+    background-image: $grid-head-background;
     background-size:cover;
 }
 
@@ -124,16 +141,6 @@ section{
 
 .isDisabled{
     cursor: not-allowed;
-    opacity: .5; 
-}
-
-#ex0 #my-btn{
-    padding-left: 90px;
-    padding-right: 90px;
     pointer-events: none;
-}
-
-.navbar-brand{
-    font-size: 25px;
-    margin-top:-3px;
+    opacity: .5; 
 }

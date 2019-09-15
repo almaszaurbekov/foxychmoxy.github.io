@@ -45,7 +45,7 @@ const projects = {
         ]
     },
     spe : {
-        title : '"SPE-HTML5"',
+        title : '"SPE"',
         text : "Student club website. The main goal is to improve your potential in the field of UI/UX.",
         url : "#",
         tool : [

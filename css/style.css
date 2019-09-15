@@ -15,17 +15,58 @@ section {
   background: rgba(0, 0, 0, 0.7);
 }
 
+#current .title {
+  font-size: 100px;
+  letter-spacing: 0.06em;
+  font-weight: bold;
+}
+
+#current #my-btn {
+  padding-left: 90px;
+  padding-right: 90px;
+}
+
+#current .sub {
+  width: 500px;
+  margin: 0 auto;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.dark-shell-current {
+  padding-top: 180px;
+}
+
+.navbar-brand {
+  font-size: 25px;
+  margin-top: -3px;
+}
+
 .row {
   width: 100%;
   margin: 0;
   padding: 0;
 }
 
+#ex0 {
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../img/library-background.jpg);
+}
+
+#ex1 {
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../img/mygoals.jpg);
+}
+
 #clippy {
   top: 50%;
   width: 25px;
   height: 25px;
-  background: blueviolet;
   -webkit-clip-path: polygon(0 100%, 0 0, 100% 0);
           clip-path: polygon(0 100%, 0 0, 100% 0);
   position: absolute;
@@ -58,30 +99,14 @@ section {
   color: white;
 }
 
-#ex0 {
-  background-image: url(../img/library-background.jpg);
-  background-size: cover;
-  color: white;
-}
-
-.dark-shell-ex0 {
-  padding-top: 180px;
-}
-
-#ex0 .title {
-  font-size: 100px;
-  letter-spacing: 0.06em;
-  font-weight: bold;
-}
-
 #weblinks {
   margin-bottom: 50px;
   font-size: 3.7em;
   letter-spacing: 0.06em;
 }
 
-#weblinks a, .sub {
-  margin: 40px;
+#weblinks a {
+  margin: 50px;
 }
 
 .my-container {
@@ -125,17 +150,7 @@ section {
 
 .isDisabled {
   cursor: not-allowed;
-  opacity: .5;
-}
-
-#ex0 #my-btn {
-  padding-left: 90px;
-  padding-right: 90px;
   pointer-events: none;
-}
-
-.navbar-brand {
-  font-size: 25px;
-  margin-top: -3px;
+  opacity: .5;
 }
 /*# sourceMappingURL=style.css.map */
