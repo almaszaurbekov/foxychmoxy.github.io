@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top" id="menu">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -18,42 +18,42 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>                        
             </button>
-            <a class="navbar-brand" href="#ex0">.prog</a>
+            <a class="navbar-brand" href="index.html">.prog</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li><a href="#ex1">MyProjects</a></li>
-                <li><a href="#ex2">MyInterests</a></li>
-                <li><a href="#ex3">MyBooks</a></li>
-                <li><a href="#ex4">MyGoals</a></li>
-                <li><a href="#ex5">MyProgress</a></li>
-                <li><a href="#ex6">AboutMe</a></li>
+                <li><a href="myprojects.html">MyProjects</a></li>
+                <li><a href="myinterests.html">MyInterests</a></li>
+                <li><a href="mybooks.html">MyBooks</a></li>
+                <li><a href="mygoals.html">MyGoals</a></li>
+                <li><a href="myprogress.html">MyProgress</a></li>
+                <li><a href="aboutme.html">AboutMe</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://github.com/FoxyChmoxy"><span class="fa fa-github"></span> GitHub</a></li>
+                <li><a href="https://www.instagram.com/foxychmoxy/"><span class="fa fa-instagram"></span> Instagram</a></li>
             </ul>
             </div>
         </div>
     </nav>
-    <section id="ex0">
+    <section id="ex1">
         <div class="dark-shell text-center dark-shell-current" id="current">
-            <p class="title" data-aos="zoom-in">Web development</p>
-            <div id="weblinks"></div>
-            <a href="tel:87019522296" data-aos="zoom-in" class="btn btn-lg btn-success" id="my-btn">
-                +7 701 95 222 96
-                <i class="fa fa-phone" style="margin-left: 10px;"></i>
+            <p class="title" data-aos="zoom-in">MyProjects</p>
+            <p class="sub" data-aos="zoom-in">My current projects and everything I want to implement. Crazy ideas and the process of their implementation.</p>
+            <a href="https://github.com/FoxyChmoxy" data-aos="zoom-in" class="btn btn-lg btn-success" id="my-btn">
+                <i class="fa fa-cloud" style="margin-right: 10px;"></i>
+                See more projects
+                <i class="fa fa-cloud" style="margin-left: 10px;"></i>
             </a>
         </div>
     </section>
-    <section id="ex1"></section>
-    <section id="ex2"></section>
-    <section id="ex3"></section>
-    <section id="ex4"></section>
-    <section id="ex5"></section>
-    <section id="ex6"></section>
+    <section>
+        <div class="my-container"></div>
+    </section>
 </body>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script> AOS.init(); </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-<script src="js/app.media.js"></script>
-<script src="js/app.sections.js"></script>
-<script src="js/app.js"></script>
+<script src="js/app.projects.js"></script>
 </html>

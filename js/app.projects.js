@@ -1,6 +1,6 @@
 const projects = {
     ebooksharing : {
-        title : '"EBookSharing"',
+        title : 'EBookSharing',
         text : "Web application for tracking transaction hand-to-hand book transfer. History of borrowing my books, creating own ELibrary and etc.",
         url : "https://github.com/FoxyChmoxy/EBookSharing",
         tool : [
@@ -9,7 +9,7 @@ const projects = {
         ]
     },
     mobileapp : {
-        title : '"Mobile App"',
+        title : 'Mobile App',
         text : "Mobile development of intellectual and entertaining game in 12 hours without prior knowledge. Begin date September 15th.",
         url : "#",
         tool : [
@@ -18,7 +18,7 @@ const projects = {
         ]
     },
     uiux : {
-        title : '"UI/UX"',
+        title : 'UI/UX',
         text : "Web application development - create a platform for UI / UX designers with a collection of tasks and solution evaluation through a bot.",
         url : "#",
         tool : [
@@ -28,7 +28,7 @@ const projects = {
         ]
     },
     pygram : {
-        title : '"PyGram"',
+        title : 'PyGram',
         text : "Automated software for uploading photos with text on a specified date.",
         url : "#",
         tool : [
@@ -36,7 +36,7 @@ const projects = {
         ]
     },
     instahack : {
-        title : '"Insta Hack"',
+        title : 'Insta Hack',
         text : "Hacking Instagram accounts through phishing and sending data by email.",
         url : "#",
         tool : [
@@ -45,7 +45,7 @@ const projects = {
         ]
     },
     spe : {
-        title : '"SPE"',
+        title : 'SPE',
         text : "Student club website. The main goal is to improve your potential in the field of UI/UX.",
         url : "#",
         tool : [
@@ -57,11 +57,11 @@ const projects = {
 
 $(document).ready(function(){
 
-    function __createCard(obj){
+    function __createCard(id, obj){
         var target = $(".my-container");
         var grid = $("<div class='grid-item'></div>");
         var head = __createHead(obj.title);
-        var body = __createBody(obj.text, obj.url);
+        var body = __createBody(id, obj.text, obj.url);
         grid.append(head);
         grid.append(body);
         target.append(grid);
@@ -76,18 +76,24 @@ $(document).ready(function(){
         return head;
     }
 
-    function __createBody(text, url){
+    function __createBody(id, text, url){
         var body = $("<div class='body'></div>");
-        var p = $(`<p>${text}</p>`);
-        var a = $(`<a href="${url}" class="btn btn-lg btn-success 
-            pull-right"><i class="fa fa-github" disabled="true"></i> GitHub</a>`)
-        if(url === "#"){
-            a.addClass("isDisabled");
-            a.attr('href', '');
-        }
-        body.append(p);
-        body.append(a);
+        body.append($(`<p>${text}</p>`));
+        body.append(__createGithubLink(url));
+        body.append(__createDetailsLink(id))
         return body;
+    }
+
+    function __createGithubLink(url){
+        var a = $(`<a href="${url}" class="btn btn-lg btn-primary 
+            pull-right"><i class="fa fa-github"></i> GitHub</a>`)
+        if(url === "#"){ a.addClass("isDisabled"); }
+        return a;
+    }
+
+    function __createDetailsLink(id){
+        return $(`<a href="projects/${id}.html" class="btn btn-lg btn-success 
+        pull-right" style="margin-right:10px;"><i class="fa fa-arrow-circle-right"></i> Details</a>`);
     }
 
     __initial();
@@ -95,7 +101,7 @@ $(document).ready(function(){
     function __initial(){
         for(var id in projects) {
             var obj = projects[id];
-            __createCard(obj);
+            __createCard(id, obj);
         }
     }
 });

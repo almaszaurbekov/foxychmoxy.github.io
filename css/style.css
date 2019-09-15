@@ -153,4 +153,36 @@ section {
   pointer-events: none;
   opacity: .5;
 }
+
+#project {
+  background-image: url(../img/project.jpg);
+  background-size: cover;
+}
+
+.project-main {
+  width: 100%;
+  height: 300px;
+  background: white;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.project-main .title {
+  margin: 0;
+  font-weight: bold;
+}
+
+.project-main hr {
+  width: 5%;
+  border: 5px solid #01645C;
+  margin-bottom: 30px;
+}
+
+.project-main .lang {
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+  margin-left: 10px;
+  border-radius: 15px;
+}
 /*# sourceMappingURL=style.css.map */
