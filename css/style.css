@@ -142,7 +142,7 @@ section {
   #mob {
     width: 100%;
     height: 100%;
-    padding:0px;
+    padding:.5px;
   }
   #non-mob {
     display: none;
