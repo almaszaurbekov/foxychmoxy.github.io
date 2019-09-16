@@ -13,9 +13,9 @@ $(document).ready(function(){
 
     function _divideSection(obj){
         var row = $(`<div class='row'></div>`);
-        var left = $(`<div class="col-lg-6" style="height:100vh;
+        var left = $(`<div id="mob" class="col-lg-6" style="height:100vh;
             background:${obj.background}"></div>`);
-        var right = $(`<div class="col-lg-6" style="
+        var right = $(`<div id="non-mob" class="col-lg-6" style="
             height:100vh;background-image:url(${obj.image});background-size:cover;"></div>`);
         var leftElements = _createInfoBlock(obj);
         left.append(leftElements);
