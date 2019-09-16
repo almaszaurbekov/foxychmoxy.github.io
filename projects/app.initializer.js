@@ -1,6 +1,5 @@
 let currentLocation = window.location.href;
-let tmp_array = currentLocation.split('/');
-const project_name = tmp_array[tmp_array.length - 1].split('.')[0];
+const project_name = currentLocation.split('?')[1];
 
 $(document).ready(function(){
 
@@ -22,4 +21,10 @@ $(document).ready(function(){
     $(".project-main").append(title);
     $(".project-main").append(hr);
     $(".project-main").append(lang);
+    $("#proj-text").append(projects[project_name].text);
+    $("#proj-datetime").append(projects[project_name].datetime);
+    $("#proj-deadline").append(projects[project_name].deadline);
+    $("#proj-status").append(projects[project_name].status);
+    $("#proj-github").append(`<a href="${projects[project_name].url}">${projects[project_name].title}</a>`);
+    $("#proj-pdf").attr("href", projects[project_name].pdf);
 });

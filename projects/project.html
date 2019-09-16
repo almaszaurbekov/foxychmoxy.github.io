@@ -1,0 +1,85 @@
+<html>
+<head>
+    <title>.prog | cs50</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="../index.html">.prog</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="../myprojects.html">MyProjects</a></li>
+                <li><a href="../myinterests.html">MyInterests</a></li>
+                <li><a href="../mybooks.html">MyBooks</a></li>
+                <li><a href="../mygoals.html">MyGoals</a></li>
+                <li><a href="../myprogress.html">MyProgress</a></li>
+                <li><a href="../aboutme.html">AboutMe</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://github.com/FoxyChmoxy"><span class="fa fa-github"></span> GitHub</a></li>
+                <li><a href="https://www.instagram.com/foxychmoxy/"><span class="fa fa-instagram"></span> Instagram</a></li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="project">
+        <a href="../myprojects.html" class="btn btn-lg btn-primary" 
+            style="margin-top:70px;margin-left:20px;" data-aos="fade-right">
+            <i class="fa fa-arrow-circle-left"></i> Back to list
+        </a>
+        <div style="clip-path: polygon(100% 50%, 0% 100%, 100% 100%);width:100%;height:300px;background:white;"></div>
+        <div class="project-main"></div>
+        <div class="project-body">
+            <div class="container" style="padding-top:20px;">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h4><i>"No matter how many ideas you have and how good they are, until you realize them."</i></h4>
+                        <h4><b>foxychmoxy</b></h4>
+                        <hr>
+                    </div>
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-3"><h4><b>Description</b>:</h4></div>
+                    <div class="col-lg-6"><h4 id="proj-text"></h4></div>
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-3"><h4><b>Datetime</b>:</h4></div>
+                    <div class="col-lg-6"><h4 id="proj-datetime"></h4></div>
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-3"><h4><b>Deadline</b>:</h4></div>
+                    <div class="col-lg-6"><h4 id="proj-deadline"></h4></div>
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-3"><h4><b>Status</b>:</h4></div>
+                    <div class="col-lg-6"><h4 id="proj-status"></h4></div>
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-3"><h4><b>Github</b>:</h4></div>
+                    <div class="col-lg-6"><h4 id="proj-github"></h4></div>
+                    <div class="col-lg-6"></div>
+                    <div class="col-lg-6" style="padding-top:20px;">
+                        <a id="proj-pdf" href="#" class="btn btn-primary">View PDF</a>
+                        <!-- TO FIX -->
+                        <a id="proj-join" href="#" onclick="alert('ATTENTION! Please contact me on my Instagram account, sorry for such inconvenience. We will fix the notification system')" class="btn btn-success">Join</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script> AOS.init(); </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="../js/app.projects.js"></script>
+<script src="app.initializer.js"></script>
+</html>

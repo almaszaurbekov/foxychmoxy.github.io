@@ -2,7 +2,11 @@ const projects = {
     ebooksharing : {
         title : 'EBookSharing',
         text : "Web application for tracking transaction hand-to-hand book transfer. History of borrowing my books, creating own ELibrary and etc.",
+        datetime : "15.09.2019",
+        deadline : "15.05.2020",
+        status : "In progress",
         url : "https://github.com/FoxyChmoxy/EBookSharing",
+        pdf : "pdf/ebooksharing.pdf",
         tool : [
             "ASP NET Core MVC", 
             "C#"
@@ -11,7 +15,11 @@ const projects = {
     mobileapp : {
         title : 'Mobile App',
         text : "Mobile development of intellectual and entertaining game in 12 hours without prior knowledge. Begin date September 15th.",
+        datetime : "15.09.2019",
+        deadline : "15.05.2020",
+        status : "Pending",
         url : "#",
+        pdf : "#",
         tool : [
             "Android", 
             "Java"
@@ -20,7 +28,11 @@ const projects = {
     uiux : {
         title : 'UI/UX',
         text : "Web application development - create a platform for UI / UX designers with a collection of tasks and solution evaluation through a bot.",
+        datetime : "15.09.2019",
+        deadline : "15.05.2020",
+        status : "Pending",
         url : "#",
+        pdf : "pdf/uiux.pdf",
         tool : [
             "ASP NET Core MVC",
             "C#",
@@ -30,7 +42,11 @@ const projects = {
     pygram : {
         title : 'PyGram',
         text : "Automated software for uploading photos with text on a specified date.",
+        datetime : "15.09.2019",
+        deadline : "15.05.2020",
+        status : "Pending",
         url : "#",
+        pdf : "pdf/pygram.pdf",
         tool : [
             "Python"
         ]
@@ -38,7 +54,11 @@ const projects = {
     instahack : {
         title : 'Insta Hack',
         text : "Hacking Instagram accounts through phishing and sending data by email.",
+        datetime : "15.09.2019",
+        deadline : "15.05.2020",
+        status : "Pending",
         url : "#",
+        pdf : "#",
         tool : [
             "HTML5",
             "PHP"
@@ -47,7 +67,11 @@ const projects = {
     spe : {
         title : 'SPE',
         text : "Student club website. The main goal is to improve your potential in the field of UI/UX.",
+        datetime : "15.09.2019",
+        deadline : "15.05.2020",
+        status : "Pending",
         url : "#",
+        pdf : "pdf/spe.pdf",
         tool : [
             "HTML5",
             "JS"
@@ -92,7 +116,7 @@ $(document).ready(function(){
     }
 
     function __createDetailsLink(id){
-        return $(`<a href="projects/${id}.html" class="btn btn-lg btn-success 
+        return $(`<a href="projects/project.html?${id}" class="btn btn-lg btn-success 
         pull-right" style="margin-right:10px;"><i class="fa fa-arrow-circle-right"></i> Details</a>`);
     }
 
