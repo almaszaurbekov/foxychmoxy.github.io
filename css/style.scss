@@ -56,6 +56,7 @@ section{
 
 #ex0{ @include current-settings; background-image: url(../img/library-background.jpg); }
 #ex1{ @include current-settings; background-image: url(../img/mygoals.jpg); }
+#ex2{ @include current-settings; background-image: url(../img/chess-background.jpg); }
 
 // -------------------------------------------------
 // Index
@@ -184,4 +185,12 @@ $grid-head-background: url(../img/mybooks.jpg);
     font-size:20px;
     margin-left:10px;
     border-radius:15px;
+}
+
+// MyInterests
+
+#my-int-row .col-lg-6{
+    min-height: 420px;
+    height: auto;
+    overflow: hidden;
 }

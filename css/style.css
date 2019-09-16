@@ -63,6 +63,13 @@ section {
   background-image: url(../img/mygoals.jpg);
 }
 
+#ex2 {
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../img/chess-background.jpg);
+}
+
 #clippy {
   top: 50%;
   width: 25px;
@@ -193,5 +200,11 @@ section {
   font-size: 20px;
   margin-left: 10px;
   border-radius: 15px;
+}
+
+#my-int-row .col-lg-6 {
+  min-height: 420px;
+  height: auto;
+  overflow: hidden;
 }
 /*# sourceMappingURL=style.css.map */
