@@ -1,0 +1,191 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/media.css">
+		<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	</head>
+	<body>
+		<div id="fx-header"></div>
+		<section class="section-01 bg-white">
+            <div class="container">
+                <h2 class="mbr-fonts-style mb-4 align-center display-2" style="margin-top:-30px">My goals</h2>
+                <h5 class="mbr-fonts-style">A list of my goals, a plan for their implementation and detailed description. In search of like-minded and super teams.</h5>
+            </div>
+        </section>
+        <section class="bg-light">
+            <div class="container-fluid">
+                <div class="row">
+					<div class="col-lg-7" style="margin-bottom:20px">
+						<div class="row">
+							<div class="col-4">
+								<div class="list-group" id="list-tab" role="tablist">
+								<a class="list-group-item list-group-item-action active" id="list-uiux-list" data-toggle="list" href="#list-uiux" role="tab" aria-controls="uiux">UI/UX</a>
+								<a class="list-group-item list-group-item-action" id="list-spe-list" data-toggle="list" href="#list-spe" role="tab" aria-controls="spe">SPE</a>
+								<!-- <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Messages</a>
+								<a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Settings</a> -->
+								</div>
+							</div>
+							<div class="col-8">
+								<div class="tab-content" id="nav-tabContent">
+									<div class="tab-pane fade show active" id="list-uiux" role="tabpanel" aria-labelledby="list-uiux-list">
+										<h3>UI/UX. Platform for web developers and designers</h3>
+										<hr>
+										<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, assumenda adipisci officiis laudantium asperiores architecto doloremque iste ut dolores, corrupti ea voluptas dicta rem necessitatibus. Accusamus rem doloribus numquam voluptate?</p>
+										<p><em>Magni alias, sunt voluptatum odit natus sit, ut nemo nihil reprehenderit et aspernatur eaque. Quibusdam voluptatum odit impedit provident modi rem, cupiditate eius dignissimos soluta molestiae voluptate quod! Corrupti, dolorem?</em>
+										Libero, placeat! Exercitationem quidem recusandae molestias, ipsa at qui distinctio veritatis nulla? Consectetur odio consequuntur temporibus quibusdam reiciendis quaerat facere atque laboriosam. Quas quam commodi voluptatibus iure, hic molestias id.</p>
+										<button id="fx-project-join" data-toggle="modal" data-target="#modal-project" class="btn btn-success" data-project="UI/UX"><i class="fa fa-group"></i> Join</button>
+									</div>
+									<div class="tab-pane fade" id="list-spe" role="tabpanel" aria-labelledby="list-spe-list">
+										<h3>SPE. Student site development</h3>
+										<hr>
+										<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, assumenda adipisci officiis laudantium asperiores architecto doloremque iste ut dolores, corrupti ea voluptas dicta rem necessitatibus. Accusamus rem doloribus numquam voluptate?</p>
+										<p><em>Magni alias, sunt voluptatum odit natus sit, ut nemo nihil reprehenderit et aspernatur eaque. Quibusdam voluptatum odit impedit provident modi rem, cupiditate eius dignissimos soluta molestiae voluptate quod! Corrupti, dolorem?</em>
+										Libero, placeat! Exercitationem quidem recusandae molestias, ipsa at qui distinctio veritatis nulla? Consectetur odio consequuntur temporibus quibusdam reiciendis quaerat facere atque laboriosam. Quas quam commodi voluptatibus iure, hic molestias id.</p>
+										<button id="fx-project-join" data-toggle="modal" data-target="#modal-project" class="btn btn-success" data-project="SPE"><i class="fa fa-group"></i> Join</button>
+									</div>
+									<!-- <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list"></div>
+									<div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list"></div> -->
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-1"></div>
+					<div class="col-lg-4">
+						<p>
+							<em>
+								You can send me your idea so that we can implement it together. 
+								<!-- Button trigger modal -->
+								<a href="" data-toggle="modal" data-target="#modal-helper">*Required</a>
+							</em>
+						</p>
+						<form>
+							<div class="form-row">
+								<div class="form-group col-md-6">
+									<label for="input-email">Email</label>
+									<input name="email" type="email" class="form-control" id="input-email" placeholder="example@gmail.com" required>
+								</div>
+								<div class="form-group col-md-6">
+									<label for="input-name">Name</label>
+									<input name="name" type="password" class="form-control" id="input-name" placeholder="Adam Smith" required>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="input-category">Category</label>
+								<select name="category" class="custom-select" id="input-category" aria-label="Example select with button addon" required>
+									<option selected disabled>Development area</option>
+									<option value="1">Mobile (Android, IOS)</option>
+									<option value="2">Web (ASP.NET, Django)</option>
+									<option value="3">Desktop (WPF)</option>
+									<option value="4">Algorithms (Machine learning)</option>
+									<option value="-1">Other</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="input-idea">Idea</label>
+								<input name="idea" type="text" class="form-control" id="input-idea" placeholder="To create telekinesis development platform...">
+							</div>
+							<div class="form-row">
+								<div class="form-group col-md-6">
+									<label for="input-city">City</label>
+									<input name="city" type="text" class="form-control" id="input-city">
+								</div>
+								<div class="form-group col-md-6">
+									<label for="input-github">Link to github (optional)</label>
+									<input name="github" type="text" class="form-control" id="input-github">
+								</div>
+							</div>
+							<button type="submit" class="btn btn-primary"><i class="fa fa-send"></i> Send</button>
+						</form>
+					</div>
+                </div>
+			</div>
+			
+			<!-- Modal: Required -->
+			<div class="modal fade" id="modal-helper" tabindex="-1" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-scrollable" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="modal-title">Agreement</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<p>Any idea and project that does not have a watermark or a trademark is publicly available, and can be used by anyone and in any way within the framework of the law of the Republic of Kazakhstan.</p>
+							<p>In case of improper use of the site, publicly and personally insulting a stranger, he is fully responsible for himself and for his actions and is ready to be punished if there is a fact of his guilty.</p>
+							<p>The intellectual property belongs to the one who is the first to officially patent it. The developer of this site promises not to abuse the trust verbally, but does not confirm this on a written document.</p>
+							<p>By clicking on the <em>"I understand"</em> button, I agree with what is indicated above and fully understand that it is in the interests of the developer to develop the project, but in case of my inaction, I completely transfer the project, if desired.</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary" data-dismiss="modal">I understand</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Modal: Project -->
+			<div class="modal fade" id="modal-project" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+				  <div class="modal-content">
+					<div class="modal-header">
+					  <h5 class="modal-title" id="modal-label">Join to the team</h5>
+					  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					  </button>
+					</div>
+					<form action="php/join.php" method="post">
+						<div class="modal-body">
+							<div class="form-group">
+								<label for="project-name" class="col-form-label">Project:</label>
+								<input name="project" readonly="readonly" type="text" class="form-control" id="project-name" required>
+							</div>
+							<div class="form-group">
+								<label for="input-join-email" class="col-form-label">Email:</label>
+								<input name="email" name="position" type="text" class="form-control" id="input-join-email" required>
+							</div>
+							<div class="form-group">
+								<label for="input-join-name" class="col-form-label">Name:</label>
+								<input name="name" name="position" type="text" class="form-control" id="input-join-name" required>
+							</div>
+							<div class="form-group">
+								<label for="input-position" class="col-form-label">Position:</label>
+								<input name="position" type="text" class="form-control" id="input-position" required>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							<button id="fx-project-send" type="submit" class="btn btn-primary">Send</button>
+						</div>
+					</form>
+				  </div>
+				</div>
+			</div>
+		</section>
+		<footer class="bg-light pb-5">
+			<div class="container text-center">
+				<p class="font-italic text-muted mb-0">&copy; Copyrights foxychmoxy.github.io All rights reserved.</p>
+			</div>
+		</footer>
+	</body>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="js/app.icons.js"></script>
+    <script src="js/app.sections.js"></script>
+    <script src="js/controllers/homeController.js"></script>
+	<script type="text/javascript">
+		let home = new homeController("fx-news" ,"fx-header", 
+            "fx-transcription", ["fx-basic", "fx-sql", "fx-frameworks"]);
+
+		home.initNavbar();
+		
+		$("#fx-project-join").each(function() {
+			console.log(this);
+		});
+
+	</script>
+</html>

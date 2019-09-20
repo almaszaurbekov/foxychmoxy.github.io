@@ -5,20 +5,23 @@ const projects = {
         datetime : "15.09.2019",
         deadline : "15.05.2020",
         status : "In progress",
-        url : "https://github.com/FoxyChmoxy/EBookSharing",
+        href : "https://github.com/FoxyChmoxy/EBookSharing",
+        url: "https://images.pexels.com/photos/2908984/pexels-photo-2908984.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
         pdf : "pdf/ebooksharing.pdf",
         tool : [
-            "ASP NET Core MVC", 
+            "ASP NET Core",
+            "MVC",
             "C#"
         ]
     },
     mobileapp : {
         title : 'Mobile App',
-        text : "Mobile development of intellectual and entertaining game in 12 hours without prior knowledge. Begin date September 15th.",
+        text : "Mobile development of intellectual and entertaining game in 12 hours without prior knowledge. I will use android operational system.",
         datetime : "15.09.2019",
         deadline : "15.05.2020",
         status : "Pending",
-        url : "#",
+        href : "#",
+        url: "https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         pdf : "#",
         tool : [
             "Android", 
@@ -31,10 +34,12 @@ const projects = {
         datetime : "15.09.2019",
         deadline : "15.05.2020",
         status : "Pending",
-        url : "#",
+        href : "#",
+        url: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         pdf : "pdf/uiux.pdf",
         tool : [
-            "ASP NET Core MVC",
+            "ASP NET Core",
+            "MVC",
             "C#",
             "JS"
         ]
@@ -45,7 +50,8 @@ const projects = {
         datetime : "15.09.2019",
         deadline : "15.05.2020",
         status : "Pending",
-        url : "#",
+        href : "#",
+        url: "https://images.pexels.com/photos/45246/green-tree-python-python-tree-python-green-45246.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         pdf : "pdf/pygram.pdf",
         tool : [
             "Python"
@@ -57,7 +63,8 @@ const projects = {
         datetime : "15.09.2019",
         deadline : "15.05.2020",
         status : "Pending",
-        url : "#",
+        href : "#",
+        url: "https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         pdf : "#",
         tool : [
             "HTML5",
@@ -66,11 +73,12 @@ const projects = {
     },
     spe : {
         title : 'SPE',
-        text : "Student club website. The main goal is to improve your potential in the field of UI/UX.",
+        text : "Student club website. To improve your potential in the field of UI/UX.",
         datetime : "15.09.2019",
         deadline : "15.05.2020",
         status : "Pending",
-        url : "#",
+        href : "#",
+        url: "https://images.pexels.com/photos/716276/pexels-photo-716276.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         pdf : "pdf/spe.pdf",
         tool : [
             "HTML5",
@@ -78,54 +86,3 @@ const projects = {
         ]
     }
 };
-
-$(document).ready(function(){
-
-    function __createCard(id, obj){
-        var target = $(".my-container");
-        var grid = $("<div class='grid-item'></div>");
-        var head = __createHead(obj.title);
-        var body = __createBody(id, obj.text, obj.url);
-        grid.append(head);
-        grid.append(body);
-        target.append(grid);
-    }
-
-    function __createHead(title){
-        var head = $("<div class='head'></div>");
-        var dark = $('<div class="dark-shell text-center"></div>');
-        var h2 = $(`<h2>${title}</h2>`);
-        dark.append(h2);
-        head.append(dark);
-        return head;
-    }
-
-    function __createBody(id, text, url){
-        var body = $("<div class='body'></div>");
-        body.append($(`<p>${text}</p>`));
-        body.append(__createGithubLink(url));
-        body.append(__createDetailsLink(id))
-        return body;
-    }
-
-    function __createGithubLink(url){
-        var a = $(`<a href="${url}" class="btn btn-lg btn-primary 
-            pull-right"><i class="fa fa-github"></i> GitHub</a>`)
-        if(url === "#"){ a.addClass("isDisabled"); }
-        return a;
-    }
-
-    function __createDetailsLink(id){
-        return $(`<a href="projects/project.html?${id}" class="btn btn-lg btn-success 
-        pull-right" style="margin-right:10px;"><i class="fa fa-arrow-circle-right"></i> Details</a>`);
-    }
-
-    __initial();
-
-    function __initial(){
-        for(var id in projects) {
-            var obj = projects[id];
-            __createCard(id, obj);
-        }
-    }
-});

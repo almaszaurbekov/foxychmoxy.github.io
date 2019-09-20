@@ -1,101 +1,133 @@
 <html>
-<head>
-    <title>.prog | cs50</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Saira+Semi+Condensed&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="css/btn-hover.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <div class="main">
-        <nav class="navbar navbar-inverse navbar-fixed-top" id="menu">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>                        
-                </button>
-                <a class="navbar-brand" href="#ex0">.prog</a>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                    <li><a href="#ex1">MyProjects</a></li>
-                    <li><a href="#ex2">MyInterests</a></li>
-                    <li><a href="#ex3">MyBooks</a></li>
-                    <li><a href="#ex4">MyGoals</a></li>
-                    <li><a href="#ex5">MyProgress</a></li>
-                    <li><a href="#ex6">AboutMe</a></li>
-                </ul>
-                </div>
-            </div>
-        </nav>
-        <section id="ex0">
-            <div class="dark-shell text-center dark-shell-current" id="current">
-                <p class="title" data-aos="zoom-in">.prog | foxychmoxy</p>
-                <div id="weblinks"></div>
-                <!-- <a href="tel:87019522296" data-aos="zoom-in" class="btn btn-lg btn-success" id="my-btn">
-                    +7 701 95 222 96
-                    <i class="fa fa-phone" style="margin-left: 10px;"></i>
-                </a> -->
-            </div>
-        </section>
-    
-        <section id="ex1"></section>
-        <section id="ex2"></section>
-        <section id="ex3"></section>
-        <section id="ex4"></section>
-        <section id="ex5"></section>
-        <section id="ex6"></section>
-    </div>
-    <div class="mobile" style="overflow:hidden;">
-        <div style="width:100%;height:100vh;background:#A32734;text-align:center;">
-            <h1 class="new-font" data-aos="zoom-in" style="font-size:50px;margin:0;color:white;padding-top:20px;margin-bottom:20px;">.prog</h1>
-            <div class="container">
-                <style>
-                    .media{
-                        padding-bottom: 27px;
-                        font-size:17px;
-                        color:white;
-                    }
-                    .new-font{
-                        font-family: 'Saira Semi Condensed', sans-serif;
-                    }
-                    .btn-section{
-                        margin-bottom:10px;
-                    }
-                </style>
-                <div style="float:left;width:50%;padding:10px;">
-                    <a class="btn btn-primary btn-lg form-control media" data-aos="fade-right" 
-                        data-aos-delay="200" href="https://github.com/FoxyChmoxy"><i class="fa fa-github"></i></a><br>
-                    <a class="btn btn-primary btn-lg form-control media" data-aos="fade-right" data-aos-delay="300" href="https://codepen.io/foxychmoxy/"><i class="fa fa-codepen"></i></a><br>
-                    <a class="btn btn-primary btn-lg form-control media" data-aos="fade-right" data-aos-delay="400" 
-                    href="https://cssbattle.dev/player/a4DkSoM91wdPPOyZZO6VwN6xjCX2"><i class="fa fa-html5"></i></a><br>
-                    <a class="btn btn-primary btn-lg form-control media" data-aos="fade-right" 
-                    data-aos-delay="500" href="https://www.hackerrank.com/foxychmoxy?hr_r=1"><i class="fa fa-h-square"></i></a><br>
-                    <a class="btn btn-primary btn-lg form-control media" data-aos="fade-right" 
-                    data-aos-delay="600" href="https://www.instagram.com/foxychmoxy/?hl=ru"><i class="fa fa-instagram"></i></a>
-                </div>
-                <div style="float:left;width:50%;padding:10px;" >
-                    <a data-aos="fade-left" data-aos-delay="700" class="btn btn-success form-control new-font btn-section" href="myprojects.html">MyProjects</a>
-                    <a data-aos="fade-left" data-aos-delay="800" class="btn btn-success form-control new-font btn-section" href="myinterests.html">MyInterests</a>
-                    <a data-aos="fade-left" data-aos-delay="900" class="btn btn-success form-control new-font btn-section" href="mymooks.html">MyBooks</a>
-                    <a data-aos="fade-left" data-aos-delay="1000" class="btn btn-success form-control new-font btn-section" href="mygoals.html">MyGoals</a>
-                    <a data-aos="fade-left" data-aos-delay="1100" class="btn btn-success form-control new-font btn-section" href="myprogress.html">MyProgress</a>
-                    <a data-aos="fade-left" data-aos-delay="1200" class="btn btn-success form-control new-font btn-section" href="aboutme.html">AboutMe</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script> AOS.init(); </script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-<script src="js/app.media.js"></script>
-<script src="js/app.sections.js"></script>
-<script src="js/app.js"></script>
+	<head>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/media.css">
+		<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	</head>
+	<body>
+		<div id="fx-header"></div>
+		<section class="banner-sec">
+			<div class="container">
+				<div id="fx-news" class="row"></div>
+			</div>
+	  	</section>
+		<section class="section-01">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-md-12">
+						<div class="">
+							<h3 class="heading-large">Personal profile</h3>
+							<p>In my free time I do multiprocessing analysis of site pages with data export to csv in the Python programming language. And I'm developing all sorts of cool desktop applications.</p>
+							<p class="card-text"><small class="text-time"><em>20.09.2019</em></small></p>
+							<br>
+
+							<h3 class="heading-large">Skills</h3>
+							<ul>
+								<li>Advanced software knowledge, including C#, Python, Java and JavaScript</li>
+								<li>Experience with database management tools such as MySQL, MS SQL, PostgreSQL and Oracle PL / SQL.</li>
+								<li>Experience developing web sites and web applications using ASP.NET (MVC) and ASP.NET Core (MVC)</li>
+							</ul>
+							<p class="card-text"><small class="text-time"><em>20.09.2019</em></small></p>
+							<br>
+
+							<h3 class="heading-large">Work experience</h3>
+							<b>Repetitors.kz</b> | <span class="text-time">Programming language tutor</span><br>
+							<small><i>SEP 2018 - JUN 2019</i></small>
+							<ul>
+								<li>Enhanced exam preparation.</li>
+								<li>Remote contact with customers and willingness to help or answer any questions of interest in adequate time.</li>
+								<li>Teaching C#, Python, Java, JS & Web Programming.</li>
+							</ul>
+							<b>Freelance</b> | <span class="text-time">Web developer</span><br>
+							<small><i>NOV 2018 - JUN 2019</i></small>
+							<ul>
+								<li>Development of online store, educational web applications, business models.</li>
+								<li>Use of different type of CSS and JS libraries.</li>
+								<li>Meeting with the client to collect requirements, discuss the TOR and schedule work.</li>
+							</ul>
+							<b>GS-IT</b> | <span class="text-time">.Net developer</span><br>
+							<small><i>JUN 2019 - PRESENT</i></small>
+							<ul>
+								<li>Using ASP.NET MVC for web application development.</li>
+								<li>Refactoring a project, using design patterns.</li>
+								<li>Creating microservices and JS controllers.</li>
+								<li>Direct interaction with the database</li>
+							</ul>
+							<p class="card-text"><small class="text-time"><em>20.09.2019</em></small></p>
+							<br>
+
+							<h3 class="heading-large">Education</h3>
+							<p><i>Satbayev University Bachelor in Computer Engineering and Software, 2021</i></p>
+							<br>
+							<h4>Transcript</h4>
+							<div class="row">
+								<div class="col-lg-12">
+									<!-- <a href="#" class="btn btn-danger"><i class="fa fa-file-text-o"></i> Download PDF</a> -->
+									<button class="btn btn-danger" disabled><i class="fa fa-file-text-o"></i> Download PDF</button>
+									<button id="fx-trans-btn" class="btn btn-primary" data-toggle="0"><i class="fa fa-angle-double-down	"></i> Watch online</button>
+								</div>
+							</div>
+							<div id="fx-transcription"></div>
+							<p class="card-text" style="margin-top:20px;"><small class="text-time"><em>20.09.2019</em></small></p>
+						</div>
+					</div>
+					<aside class="col-lg-4 side-bar col-md-12">
+						<ul class="nav nav-tabs" role="tablist" id="myTab">
+							<li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#fx-basic" role="tab">Basic</a> </li>
+							<li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#fx-sql" role="tab">SQL</a> </li>
+							<li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#fx-frameworks" role="tab">Frameworks</a> </li>
+						</ul>
+						<!-- Tab panes -->
+						<div class="tab-content sidebar-tabing" id="nav-tabContent">
+							<div class="tab-pane active" id="fx-basic" role="tabpanel"></div>
+							<div class="tab-pane" id="fx-sql" role="tabpanel"></div>
+							<div class="tab-pane" id="fx-frameworks" role="tabpanel"></div>
+						</div>
+						<div class="video-sec">
+							<h3 class="heading-large">Contacts</h3>
+							<br><br>
+							<p><i class="fa fa-address-book" style="font-size:20px;margin-right:5px"></i><em>Kazakhstan, Almaty, Orbita-3, 20/15</em></p>
+							<p><i class="fa fa-google-plus-square" style="font-size:20px;margin-right:5px"></i><em><a href="mailto:foxxychmoxy@gmail.com">foxxychmoxy@gmail.com</a></em></p>
+							<p><i class="fa fa-github-square" style="font-size:20px;margin-right:5px"></i><em><a href="https://github.com/FoxyChmoxy">foxychmoxy</a></em></p>
+							<p><i class="fa fa-phone-square" style="font-size:20px;margin-right:5px"></i><em><a href="tel:87019522296">+7 701 95 222 96</a></em></p>
+						</div>
+					</aside>
+				</div>
+			</div>
+		</section>
+		<footer class="bg-white pb-5">
+			<div class="container text-center">
+				<p class="font-italic text-muted mb-0">&copy; Copyrights foxychmoxy.github.io All rights reserved.</p>
+			</div>
+		</footer>
+	</body>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+	<script src="js/app.news.js"></script>
+	<script src="js/app.icons.js"></script>
+	<script src="js/app.sections.js"></script>
+	<script src="js/app.media.js"></script>
+	<script src="js/app.transcription.js"></script>
+	<script src="js/controllers/homeController.js"></script>
+	<script type="text/javascript">
+		let controller = new homeController("fx-news" ,"fx-header", 
+			"fx-transcription", ["fx-basic", "fx-sql", "fx-frameworks"]);
+		controller.init();
+
+		$("#fx-trans-btn").click(function(){
+			$("#fx-transcription").toggle(500);
+			if($(this).attr("data-toggle") === "0"){
+				$(this).html('<i class="fa fa-angle-double-up"></i> Hide');
+				$(this).attr("data-toggle", "1");
+			}
+			else{
+				$(this).html('<i class="fa fa-angle-double-down"></i> Watch online');
+				$(this).attr("data-toggle", "0");
+			}
+		});
+	</script>
 </html>
