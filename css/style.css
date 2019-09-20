@@ -453,7 +453,7 @@ header {
   .display-2 {
     font-size: 55px !important;
   }
-  .display-4 {
+  #fx-error .display-4 {
     font-size: 25px !important;
   }
 }
