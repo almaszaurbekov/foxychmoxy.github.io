@@ -131,7 +131,7 @@ class homeController{
     __getNews(){
         var array = [];
         for(let i = 0; i < hot.length; i++){
-            var card    = $('<a href="hot[i].href" class="card"></a>');
+            var card    = $(`<a href="${hot[i].href}" class="card"></a>`);
             var img     = $(`<img class="img-fluid" src="${hot[i].url}"></div>`)
             var overlay = $('<div class="card-img-overlay"></div>');
             var tag     = $(`<span class="badge badge-pill badge-danger" style="margin:5px;padding:5px">${hot[i].tag}</span>`);
