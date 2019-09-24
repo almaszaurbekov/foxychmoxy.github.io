@@ -46,7 +46,6 @@ class homeController{
         var x, y;
         var i = 0;
         for(x in panels){
-            console.log(x);
             for(y in panels[x]){
                 var media  = $('<div class="media"></div>');
                 var a      = $(`<img class="d-flex mr-3" src="${panels[x][y].url}">`);

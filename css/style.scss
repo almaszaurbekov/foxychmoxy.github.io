@@ -100,6 +100,7 @@ header{float: left; width:100%}
 .action-box h2{color:#fff; font-size:20px;}
 
 #fx-transcription{display: none;}
+.fx-disabled{pointer-events: none; color: #666; opacity: 0.5}
 
 @media only screen and (max-width: 768px) {
   .display-2{ font-size: 55px !important; }

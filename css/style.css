@@ -449,6 +449,12 @@ header {
   display: none;
 }
 
+.fx-disabled {
+  pointer-events: none;
+  color: #666;
+  opacity: 0.5;
+}
+
 @media only screen and (max-width: 768px) {
   .display-2 {
     font-size: 55px !important;
