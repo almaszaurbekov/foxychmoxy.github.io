@@ -1,40 +1,40 @@
 const tags = [ "News", "Coding", "Useful" ];
 const hot  = [
     {
-        tag: tags[1],
-        url: "https://techrocks.ru/wp-content/uploads/2019/03/best-python-ides-770x515.jpg",
-        text: "Python is a programming language that lets you work quickly",
-        href: "https://www.python.org/",
-        time: "20.09.2019"
-    },
-    {
-        tag: tags[2],
-        url: "https://www.thecrazyprogrammer.com/wp-content/uploads/2016/12/How-to-Choose-Best-Laptop-for-Programming-in-2017.jpeg",
-        text: "How to Choose Best Laptop for Programming in 2019?",
-        href: "https://www.thecrazyprogrammer.com/2016/12/best-laptop-for-programming.html",
-        time: "20.09.2019"
+        tag: tags[0],
+        url: "https://images.pexels.com/photos/955447/pexels-photo-955447.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        text: "My progress page is now available!",
+        href: "https://foxychmoxy.github.io/portfolio-html5/progress.html",
+        time: "24.09.2019"
     },
     {
         tag: tags[1],
-        url: "http://detekcerebs.com/wp-content/uploads/2019/03/cssw.jpg",
-        text: "CSS-TRICKS is amazing site for web developers",
-        href: "https://css-tricks.com/",
-        time: "20.09.2019"
+        url: "https://s3.amazonaws.com/media.eremedia.com/wp-content/uploads/2018/05/31112343/Codepen.png",
+        text: "Did you know that I have Codepen Account?",
+        href: "https://codepen.io/foxychmoxy",
+        time: "24.09.2019"
+    },
+    {
+        tag: tags[0],
+        url: "https://images.pexels.com/photos/2962059/pexels-photo-2962059.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        text: "Are you interested in UI/UX? Join to my team to develop some amazing projects!",
+        href: "https://foxychmoxy.github.io/portfolio-html5/goals.html",
+        time: "24.09.2019"
     },
     {
         tag: tags[1],
-        url: "https://miro.medium.com/max/1200/1*RJMxLdTHqVBSijKmOO5MAg.jpeg",
-        text: "Python Check Variable Type – 3 Ways",
-        href: "https://www.thecrazyprogrammer.com/2019/09/python-check-variable-type.html",
+        url: "https://images.pexels.com/photos/2042109/pexels-photo-2042109.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        text: "Check on my Github Tower Defense game in TypeScript",
+        href: "https://github.com/FoxyChmoxy/tower-defense-ts",
         time: "20.09.2019"
     }
 ];
 const slides = [
     {
         url: "https://miro.medium.com/max/2798/1*yDgSJrVPPH70Jdh6KUyokA.png",
-        title: "Introducing CSSBattle — the first CSS code-golfing game",
-        href: "https://medium.com/free-code-camp/introducing-cssbattle-the-first-css-code-golfing-game-88b7518df618",
-        des: "If you are already a professional Web developer, there is a very high chance you have written CSS at least once in your life. It is a very basic building block of any webpage. Amidst all the discussions and love and hate for CSS, we present to you all — CSSBattle 🔥⚔️<br><br> CSSBattle is the first ever code-golfing platform for CSS lovers that I and my friend, Kushagra Agarwal, have created. The aim of this game is simple — you have an image target which you need to replicate with the smallest possible CSS (and slight HTML if you please) code.",
+        title: "Introducing CSSBattle — a true arena for CSS warriors",
+        href: "https://cssbattle.dev/player/foxychmoxy",
+        des: "If you are already a professional Web developer, there is a very high chance you have written CSS at least once in your life. It is a very basic building block of any webpage. Amidst all the discussions and love and hate for CSS, I present to you all — CSSBattle 🔥⚔️<br><br> The aim of this game is simple — you have an image target which you need to replicate with the smallest possible CSS (and slight HTML if you please) code.",
         time: "20.09.2019"
     },
     {
